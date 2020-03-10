@@ -44,3 +44,29 @@ function changeColor(/*event*/e){
 }
 
 formButton.addEventListener('click', changeColor)
+
+
+
+
+
+
+
+
+
+
+
+
+function addAPart(){
+   e.stopPropagation()
+   // e.stopPropagation()
+   // console.log('Hit function addAPart')
+
+
+   const newLi = document.createElement('li')
+   newLi.innerText = "THE GREATEST"
+   const partList = document.getElementById('part-list')
+   partList.appendChild(newLi)
+}
+
+document.getElementById('part-button').addEventListener('click',addAPart)
+
