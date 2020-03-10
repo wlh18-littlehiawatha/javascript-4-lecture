@@ -28,3 +28,19 @@ headerText.innerText = 'I am in control now'
 
 headerText.style.color = 'red'
 
+function showMeTheMoney(){
+   console.log('$$$$$$$$$$$$$$$$')
+
+}
+
+function changeColor(/*event*/e){
+   e.preventDefault()
+   const contentHold = document.querySelector('.content-hold')
+   const colorInput = document.getElementById('color-input')
+   // console.log(contentHold)
+   // console.log(colorInput)
+   // console.log(colorInput.value)
+   contentHold.style.background = colorInput.value
+}
+
+formButton.addEventListener('click', changeColor)
